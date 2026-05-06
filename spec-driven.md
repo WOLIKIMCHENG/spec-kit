@@ -318,6 +318,18 @@ No implementation code shall be written before:
 
 This completely inverts traditional AI code generation. Instead of generating code and hoping it works, the LLM must first generate comprehensive tests that define behavior, get them approved, and only then generate implementation.
 
+#### Articles IV, V & VI: Project-Customizable Standards
+
+Articles IV, V, and VI address concerns that vary significantly across projects. Unlike Articles I–III and VII–IX—which are fixed in the Spec Kit framework—these three articles are intentionally left for each project to define in its own constitution:
+
+- **Article IV** addresses integration concerns—such as integration testing requirements, contract testing across service boundaries, or cross-component communication standards. The constitution template provides `[PRINCIPLE_4_NAME]` / `[PRINCIPLE_4_DESCRIPTION]` as the placeholder slot for this article, with an example hint of *Integration Testing*.
+
+- **Article V** addresses operational concerns—such as observability, structured logging, or monitoring requirements. Its rules live in the `[PRINCIPLE_5_NAME]` / `[PRINCIPLE_5_DESCRIPTION]` placeholder, with an example hint of *Observability*.
+
+- **Article VI** addresses lifecycle concerns—such as versioning schemes, breaking change policies, or deprecation standards. Like Article V, it is defined within the flexible principle slots in the constitution template, with an example hint of *Versioning & Breaking Changes*.
+
+To define these articles, populate the corresponding principle sections in `.specify/memory/constitution.md` (generated from `templates/constitution-template.md`). The `/speckit.analyze` command dynamically validates compliance against whatever rules your project defines for Articles IV–VI, so teams can tailor these standards to their specific technical and organizational needs without modifying Spec Kit itself.
+
 #### Articles VII & VIII: Simplicity and Anti-Abstraction
 
 These paired articles combat over-engineering:
