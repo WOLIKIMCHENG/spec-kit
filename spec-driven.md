@@ -324,9 +324,9 @@ Articles IV, V, and VI are the primary areas the constitution template reserves 
 
 - **Article IV** addresses integration concerns—such as integration testing requirements, contract testing across service boundaries, or cross-component communication standards. The constitution template's `[PRINCIPLE_4_NAME]` / `[PRINCIPLE_4_DESCRIPTION]` slot is dedicated to this article, with an example hint of *Integration Testing*.
 
-- **Articles V & VI** address operational and lifecycle concerns—such as observability, structured logging, versioning schemes, or breaking-change policies. By default, the template groups these under a single `[PRINCIPLE_5_NAME]` / `[PRINCIPLE_5_DESCRIPTION]` slot (example hint: *V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity*). The label text is a suggestion only—teams can name and scope this slot however fits their project, or expand to separate articles using `/speckit.constitution`.
+- **Articles V & VI** address operational and lifecycle concerns—such as observability, structured logging, versioning schemes, or breaking-change policies. By default, the template groups these under a single `[PRINCIPLE_5_NAME]` / `[PRINCIPLE_5_DESCRIPTION]` slot. Teams can name and scope this slot however fits their project, or expand to separate articles using `/speckit.constitution`.
 
-To define these articles for your project, run `/speckit.constitution`—it guides you through populating the principle sections in `.specify/memory/constitution.md`. The `/speckit.analyze` command validates all spec and plan artifacts against every principle in your project constitution, so any rules you define here are automatically applied during analysis.
+To define these articles for your project, run `/speckit.constitution`—it guides you through populating the principle sections in `.specify/memory/constitution.md`. The `/speckit.analyze` command validates all spec, plan, and task artifacts against every principle in your project constitution, so any rules you define here are automatically applied during analysis.
 
 #### Articles VII & VIII: Simplicity and Anti-Abstraction
 
