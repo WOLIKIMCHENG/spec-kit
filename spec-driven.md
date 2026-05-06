@@ -320,15 +320,13 @@ This completely inverts traditional AI code generation. Instead of generating co
 
 #### Articles IV, V & VI: Project-Customizable Standards
 
-Articles IV, V, and VI address concerns that vary significantly across projects. Unlike Articles I–III and VII–IX—which are fixed in the Spec Kit framework—these three articles are intentionally left for each project to define in its own constitution:
+Articles IV, V, and VI are the primary areas the constitution template reserves for project-specific standards. While the `/speckit.constitution` command lets teams define fewer or more principles than the template provides, these three articles represent the typical customization focus:
 
-- **Article IV** addresses integration concerns—such as integration testing requirements, contract testing across service boundaries, or cross-component communication standards. The constitution template provides `[PRINCIPLE_4_NAME]` / `[PRINCIPLE_4_DESCRIPTION]` as the placeholder slot for this article, with an example hint of *Integration Testing*.
+- **Article IV** addresses integration concerns—such as integration testing requirements, contract testing across service boundaries, or cross-component communication standards. The constitution template's `[PRINCIPLE_4_NAME]` / `[PRINCIPLE_4_DESCRIPTION]` slot is dedicated to this article, with an example hint of *Integration Testing*.
 
-- **Article V** addresses operational concerns—such as observability, structured logging, or monitoring requirements. Its rules live in the `[PRINCIPLE_5_NAME]` / `[PRINCIPLE_5_DESCRIPTION]` placeholder, with an example hint of *Observability*.
+- **Articles V & VI** address operational and lifecycle concerns—such as observability, structured logging, versioning schemes, or breaking-change policies. By default, the template groups these under a single `[PRINCIPLE_5_NAME]` / `[PRINCIPLE_5_DESCRIPTION]` slot (example hint: *V. Observability, VI. Versioning & Breaking Changes*). Teams that need separate articles can expand to additional principle sections using `/speckit.constitution`.
 
-- **Article VI** addresses lifecycle concerns—such as versioning schemes, breaking change policies, or deprecation standards. Like Article V, it is defined within the flexible principle slots in the constitution template, with an example hint of *Versioning & Breaking Changes*.
-
-To define these articles, populate the corresponding principle sections in `.specify/memory/constitution.md` (generated from `templates/constitution-template.md`). The `/speckit.analyze` command dynamically validates compliance against whatever rules your project defines for Articles IV–VI, so teams can tailor these standards to their specific technical and organizational needs without modifying Spec Kit itself.
+To define these articles, populate the corresponding principle sections in `.specify/memory/constitution.md` (generated from `templates/constitution-template.md`). The `/speckit.analyze` command validates all spec and plan artifacts against every principle in your project constitution, so any rules you define here are automatically applied during analysis.
 
 #### Articles VII & VIII: Simplicity and Anti-Abstraction
 
