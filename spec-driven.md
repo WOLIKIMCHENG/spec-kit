@@ -324,9 +324,9 @@ Articles IV, V, and VI are the primary areas the constitution template reserves 
 
 - **Article IV** addresses integration concerns—such as integration testing requirements, contract testing across service boundaries, or cross-component communication standards. The constitution template's `[PRINCIPLE_4_NAME]` / `[PRINCIPLE_4_DESCRIPTION]` slot is dedicated to this article, with an example hint of *Integration Testing*.
 
-- **Articles V & VI** address operational and lifecycle concerns—such as observability, structured logging, versioning schemes, or breaking-change policies. By default, the template groups these under a single `[PRINCIPLE_5_NAME]` / `[PRINCIPLE_5_DESCRIPTION]` slot (example hint: *V. Observability, VI. Versioning & Breaking Changes*). Teams that need separate articles can expand to additional principle sections using `/speckit.constitution`.
+- **Articles V & VI** address operational and lifecycle concerns—such as observability, structured logging, versioning schemes, or breaking-change policies. By default, the template groups these (along with a Simplicity article) under a single `[PRINCIPLE_5_NAME]` / `[PRINCIPLE_5_DESCRIPTION]` slot (example hint: *V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity*). Teams that need separate articles can expand to additional principle sections using `/speckit.constitution`.
 
-To define these articles, populate the corresponding principle sections in `.specify/memory/constitution.md` (generated from `templates/constitution-template.md`). The `/speckit.analyze` command validates all spec and plan artifacts against every principle in your project constitution, so any rules you define here are automatically applied during analysis.
+To define these articles, populate the corresponding principle sections in `.specify/memory/constitution.md` (initialized from `.specify/templates/constitution-template.md` in your project, sourced from `templates/constitution-template.md` in the Spec Kit repo). The `/speckit.analyze` command validates all spec and plan artifacts against every principle in your project constitution, so any rules you define here are automatically applied during analysis.
 
 #### Articles VII & VIII: Simplicity and Anti-Abstraction
 
