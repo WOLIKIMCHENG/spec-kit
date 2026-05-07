@@ -318,15 +318,17 @@ No implementation code shall be written before:
 
 This completely inverts traditional AI code generation. Instead of generating code and hoping it works, the LLM must first generate comprehensive tests that define behavior, get them approved, and only then generate implementation.
 
-#### Articles IV, V & VI: Project-Customizable Standards
+#### Articles IV, V & VI: Project-Specific Standards
 
-Articles IV, V, and VI are the primary areas the constitution template reserves for project-specific standards. While the `/speckit.constitution` command lets teams define fewer or more principles than the template provides, these three articles represent the typical customization focus:
+Articles IV, V, and VI are reserved for project-specific standards that teams define to suit their domain and operational needs:
 
-- **Article IV** addresses integration concerns—such as integration testing requirements, contract testing across service boundaries, or cross-component communication standards. The constitution template's `[PRINCIPLE_4_NAME]` / `[PRINCIPLE_4_DESCRIPTION]` slot is dedicated to this article, with an example hint of *Integration Testing*.
+- **Article IV** typically addresses integration concerns—such as integration testing requirements, contract testing across service boundaries, or cross-component communication standards.
 
-- **Articles V & VI** address operational and lifecycle concerns—such as observability, structured logging, versioning schemes, or breaking-change policies. By default, the template groups these under a single `[PRINCIPLE_5_NAME]` / `[PRINCIPLE_5_DESCRIPTION]` slot. Teams can name and scope this slot however fits their project, or expand to separate articles using `/speckit.constitution`.
+- **Article V** typically addresses operational concerns—such as observability, structured logging, or monitoring requirements.
 
-To define these articles for your project, run `/speckit.constitution`—it guides you through populating the principle sections in `.specify/memory/constitution.md`. The `/speckit.analyze` command validates all spec, plan, and task artifacts against every principle in your project constitution, so any rules you define here are automatically applied during analysis.
+- **Article VI** typically addresses lifecycle concerns—such as versioning schemes, breaking-change policies, or deprecation strategies.
+
+Teams are free to name and scope these articles however best fits their project. They represent the primary customization points in the constitution where project-specific architectural principles are codified.
 
 #### Articles VII & VIII: Simplicity and Anti-Abstraction
 
