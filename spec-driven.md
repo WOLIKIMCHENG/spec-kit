@@ -320,7 +320,7 @@ This completely inverts traditional AI code generation. Instead of generating co
 
 #### Articles IV, V & VI: Project-Specific Standards
 
-Articles IV, V, and VI are reserved for project-specific standards that teams define to suit their domain and operational needs:
+Articles IV, V, and VI are reserved for project-specific standards that teams define to suit their domain, operational, and lifecycle needs:
 
 - **Article IV** typically addresses integration concerns—such as integration testing requirements, contract testing across service boundaries, or cross-component communication standards.
 
@@ -328,7 +328,7 @@ Articles IV, V, and VI are reserved for project-specific standards that teams de
 
 - **Article VI** typically addresses lifecycle concerns—such as versioning schemes, breaking-change policies, or deprecation strategies.
 
-Teams are free to name and scope these articles however best fits their project. They represent the primary customization points in the constitution where project-specific architectural principles are codified.
+Teams are free to name and scope these articles however fits their project best. They represent the primary customization points in the constitution where project-specific architectural principles are codified.
 
 #### Articles VII & VIII: Simplicity and Anti-Abstraction
 
