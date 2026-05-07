@@ -320,7 +320,7 @@ This completely inverts traditional AI code generation. Instead of generating co
 
 #### Articles IV, V & VI: Project-Specific Standards
 
-Articles IV, V, and VI are reserved for project-specific standards that teams define to suit their domain, operational, and lifecycle needs:
+Articles IV, V, and VI are reserved for project-specific standards that teams define to suit their integration, operational, and lifecycle needs:
 
 - **Article IV** typically addresses integration concerns—such as integration testing requirements, contract testing across service boundaries, or cross-component communication standards.
 
