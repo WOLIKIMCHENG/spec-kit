@@ -318,17 +318,17 @@ No implementation code shall be written before:
 
 This completely inverts traditional AI code generation. Instead of generating code and hoping it works, the LLM must first generate comprehensive tests that define behavior, get them approved, and only then generate implementation.
 
-#### Articles IV, V & VI: Project-Specific Standards
+#### Project-Specific Standards: Common Constitution Areas
 
-Articles IV, V, and VI are reserved for project-specific standards that teams define to suit their integration, operational, and lifecycle needs:
+Project-specific standards are defined by each team in their constitution via `/speckit.constitution`. A project may define fewer or more principles than any default template, but in many constitutions these standards often cover areas such as integration, operations, and lifecycle expectations:
 
-- **Article IV** typically addresses integration concerns—such as integration testing requirements, contract testing across service boundaries, or cross-component communication standards.
+- **Article IV** may address integration concerns—such as integration testing requirements, contract testing across service boundaries, or cross-component communication standards.
 
-- **Article V** typically addresses operational concerns—such as observability, structured logging, or monitoring requirements.
+- **Article V** may address operational concerns—such as observability, structured logging, or monitoring requirements.
 
-- **Article VI** typically addresses lifecycle concerns—such as versioning schemes, breaking-change policies, or deprecation strategies.
+- **Article VI** may address lifecycle concerns—such as versioning schemes, breaking-change policies, or deprecation strategies.
 
-Teams are free to name and scope these articles in whatever way best fits their project. They represent the primary customization points in the constitution where project-specific architectural principles are codified.
+These article numbers are illustrative rather than reserved slots. Teams are free to define, name, scope, add, remove, or reorder principles in whatever way best fits their project, with `/speckit.constitution` serving as the mechanism for codifying those project-specific architectural standards.
 
 #### Articles VII & VIII: Simplicity and Anti-Abstraction
 
